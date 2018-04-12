@@ -18,6 +18,15 @@ body {
 .btn-outline-secondary:hover {
   background: green;
 }
+#footer {
+  position:absolute;
+  text-align: center;
+  bottom:0;
+  color: white;
+  font-size: 20px;
+  width:100%;
+  height:60px;   /* Height of the footer */
+}
 #search-bar {
   position: absolute;
   margin: auto;
