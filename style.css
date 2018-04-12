@@ -1,0 +1,25 @@
+body {
+  /* background-image: url("traffic_sign.jpeg"); */
+}
+.content {
+  text-align: center;
+}
+.logo {
+  left: 0px;
+  right: 0px;
+  margin-top: 50px;
+  font-size: 90px;
+}
+.sub-text {
+
+}
+#search-bar {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  right: 0;
+  bottom: 50%;
+  left: 0;
+  width: 800px;
+  height: 40px;
+}
