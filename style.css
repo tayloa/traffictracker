@@ -1,7 +1,9 @@
 body {
-  /* background-image: url("traffic_sign.jpeg"); */
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("traffic.gif");
+  background-size:cover;
 }
 .content {
+  color: white;
   text-align: center;
 }
 .logo {
@@ -10,8 +12,11 @@ body {
   margin-top: 50px;
   font-size: 90px;
 }
-.sub-text {
-
+.btn-outline-secondary {
+  color: white;
+}
+.btn-outline-secondary:hover {
+  background: green;
 }
 #search-bar {
   position: absolute;
