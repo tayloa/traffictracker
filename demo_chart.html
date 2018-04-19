@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+   
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <link rel="stylesheet" type:"text/css" href="style.css">
+   <title>Demo Google API</title>
+   
+</head>
+
+
+<body>
+   <div id="chart">
+      <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1386_RC02/embed_loader.js"></script> 
+      <script type="text/javascript"> 
+         trends.embed.renderExploreWidget(
+            "TIMESERIES", 
+            {
+               "comparisonItem":[{"keyword":"cambridge analytica","geo":"","time":"today 12-m"}],"category":0,"property":""
+            }, 
+            {
+               "exploreQuery":"q=nvidia&date=today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"
+            }
+         ); 
+      </script> 
+   </div>
+      
+   <p>What's good with this a.k.a. why does this not work?????</p>
+   
+</body>
+   
+</html>
