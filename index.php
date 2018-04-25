@@ -11,20 +11,23 @@
 <?php
 
 // Validate input and sanitize
-if ($_SERVER['REQUEST_METHOD']== "POST") {
- $valid = true; //Your indicator for your condition, actually it depends on what you need. I am just used to this method.
-
- if (empty($_POST["query"])) {
-    $error = "Please enter a query";
-    $valid = false;
- }
+// if ($_SERVER['REQUEST_METHOD']== "POST") {
+//  $valid = true; //Your indicator for your condition, actually it depends on what you need. I am just used to this method.
+//
+//  if (empty($_POST["query"])) {
+//     $error = "Please enter a query";
+//     $( document ).click(function() {
+//       $( "#search-form" ).effect( "shake");//, { direction: "left", times: 4, distance: 5}, 2600  );
+//     });
+//     $valid = false;
+//  }
 
 //if valid then redirect
-  if($valid){
-   header('Location: http://localhost/traffictracker/dashboard.php');
-   exit();
-  }
-}
+//   if($valid){
+//    header('Location: http://localhost/traffictracker/dashboard.php');
+//    exit();
+//   }
+// }
 ?>
 <div class="content">
   <div class="title">
@@ -35,13 +38,13 @@ if ($_SERVER['REQUEST_METHOD']== "POST") {
   </div>
 </div>
 
-<form  id="search-form" name="search-form" action="index.php" method="post" onsubmit="validate();">
+<form  id="search-form" name="search-form" action="index.php" method="post" onsubmit="return validate(this);">
   <div class="form-group">
     <div class="input-group mb-3" id="search-bar">
       <input type="text" class="form-control" placeholder="Enter a topic"
       value="<?php if($havePost && $errors != '') { echo $query; } ?>" name="query" id="query" aria-label="query" aria-describedby="basic-addon2">
       <div class="input-group-append">
-        <button type="submit" class="btn btn-outline-secondary">Search</button>
+        <button id="submit-button" type="submit" class="btn btn-outline-secondary">Search</button>
       </div>
     </div>
   </div>

@@ -1,12 +1,25 @@
-// function validate() {
-//   alert("You clicked search!");
-//   $( document ).click(function() {
-//     $( "#search-form" ).effect( "shake" );
-//   });
-// }
-//
-$( document ).click(function() {
-  $( "#search-form" ).effect( "shake");//, { direction: "left", times: 4, distance: 5}, 2600  );
+function validate(formObj) {
+  if (formObj.query.value === "") {
+    $("#query").focus(function() {
+      $(this).css('border-color', '#FFFFEE');
+    });
+    $( "#search-form" ).effect("shake");
+    $( "#submit-button" ).css( "background",'red' );
+    // data-toggle="popover"
+    // data-trigger="focus"
+    // data-content="And here's some amazing content. It's very engaging. Right?"
+    return false;
+  }
+  return true;
+}
+
+$( document ).ready(function() {
+  $(function () {
+  $('[data-toggle="popover"]').popover()
+  });
+  $("#query").focus();
+
+  $("#query").click(function() {
+    $( "#submit-button" ).css( "background",'green' );
+  });
 });
-// var Key = "133a79bda4ff4d14af5ff27f4362e533";
-// http://api.similarweb.com/site/airbnb.com/v1/traffic;
