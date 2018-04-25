@@ -41,6 +41,10 @@
 <form  id="search-form" name="search-form" action="index.php" method="post" onsubmit="return validate(this);">
   <div class="form-group">
     <div class="input-group mb-3" id="search-bar">
+      <a href="#" class="btn btn-secondary" data-toggle="popover" data-placement="top" data-trigger="hover"
+      data-content="Enter a topic to query and we'll send you its trend data.">
+        <i class="fas fa-question"></i>
+      </a>
       <input type="text" class="form-control" placeholder="Enter a topic"
       value="" name="query" id="query" aria-label="query" aria-describedby="basic-addon2">
       <div class="input-group-append">
@@ -49,8 +53,8 @@
       </div>
     </div>
   </div>
+  </div>
 </form>
-
 </div>
 
 <?php include('includes/foot.inc.php');
