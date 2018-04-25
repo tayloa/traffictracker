@@ -11,7 +11,7 @@
 <!-- INNER HTML WILL GO HERE -->
 <div class="content">
   <div class="title">
-    <h1 class="logo">Traffic Tracker</h1>
+    <h1 class="logo"><i class="fas fa-car"></i> Traffic Tracker</h1>
   </div>
   <div>
     <h3 class="sub-text">News and data on one platform</h3>
