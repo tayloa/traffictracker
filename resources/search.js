@@ -4,22 +4,19 @@ function validate(formObj) {
       $(this).css('border-color', '#FFFFEE');
     });
     $( "#search-form" ).effect("shake");
-    $( "#submit-button" ).css( "background",'red' );
-    // data-toggle="popover"
-    // data-trigger="focus"
-    // data-content="And here's some amazing content. It's very engaging. Right?"
+    $("#submit-button").toggleClass("btn-danger","btn-success");
     return false;
   }
   return true;
 }
 
 $( document ).ready(function() {
-  $(function () {
-  $('[data-toggle="popover"]').popover()
-  });
-  $("#query").focus();
 
+  // Initialize pop overs
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  });
   $("#query").click(function() {
-    $( "#submit-button" ).css( "background",'green' );
+    $("#submit-button").toggleClass("btn-danger","btn-success");
   });
 });

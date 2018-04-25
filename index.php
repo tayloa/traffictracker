@@ -44,7 +44,8 @@
       <input type="text" class="form-control" placeholder="Enter a topic"
       value="<?php if($havePost && $errors != '') { echo $query; } ?>" name="query" id="query" aria-label="query" aria-describedby="basic-addon2">
       <div class="input-group-append">
-        <button id="submit-button" type="submit" class="btn btn-outline-secondary">Search</button>
+        <a id="submit-button" tabindex="0" class="btn btn-success" role="button" data-toggle="popover" data-trigger="focus"
+        data-content="Please enter a query." data-placement="top" type="submit" onclick='$("#search-form").submit()'>Search</a>
       </div>
     </div>
   </div>

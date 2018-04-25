@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("traffic.gif");
+  background: linear-gradient(to right, #EB3349 , #F45C43);
   background-size:cover;
 }
 .content {
@@ -12,11 +12,11 @@ body {
   margin-top: 50px;
   font-size: 90px;
 }
-.btn-outline-secondary {
-  color: white;
+.btn-success {
+  background: green !important;
 }
-.btn-outline-secondary:hover {
-  background: green;
+.btn-danger {
+  background: red !important;
 }
 #footer {
   position:absolute;

@@ -1,7 +1,7 @@
 
   </div>
     <div id="footer">
-      Aaron Tayor, Justin Gaskins, Agnes Lee 2018, Rensselaer Polytechnic Institute
+      Aaron Tayor, Justin Gaskins 2018, Rensselaer Polytechnic Institute
     </div>
     <script  src="http://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
