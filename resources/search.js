@@ -4,7 +4,8 @@ function validate(formObj) {
       $(this).css('border-color', '#FFFFEE');
     });
     $( "#search-form" ).effect("shake");
-    $("#submit-button").toggleClass("btn-danger","btn-success");
+    $("#submit-button").removeClass("btn-success");
+    $("#submit-button").addClass("btn-danger");
     return false;
   }
   return true;
@@ -16,10 +17,14 @@ $( document ).ready(function() {
   $(function () {
     $('[data-toggle="popover"]').popover()
   });
+  $("#sub-text").hide(0).fadeIn(4000);
 
   $( "#toggle" ).toggle( "scale" );
 
   $("#query").click(function() {
-    $("#submit-button").toggleClass("btn-danger","btn-success");
+    if ($(this).value != "") {
+      $("#submit-button").removeClass("btn-danger");
+      $("#submit-button").addClass("btn-success");
+    }
   });
 });

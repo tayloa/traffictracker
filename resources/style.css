@@ -20,6 +20,9 @@ body {
 .btn-danger {
   background: red !important;
 }
+#sub-text {
+  display: none;
+}
 #footer {
   position:absolute;
   text-align: center;

@@ -31,13 +31,10 @@
 ?>
 <div class="content">
   <div class="title">
-    <!-- <h1 class="logo"><i class="fas fa-car"></i> Traffic Tracker</h1> -->
-    <h1 class="logo"><i class="fas fa-archive"></i> Trend Tracker</h1>
-
-
+    <h1 class="logo animated bounceInDown"><i class="fas fa-archive infinite pulse"></i> Trend Tracker</h1>
   </div>
   <div>
-    <h3 class="sub-text">News and data on one platform</h3>
+    <h3 id="sub-text" class="sub-text">View your trends across platforms in one place</h3>
   </div>
 </div>
 
@@ -45,7 +42,7 @@
   <div class="form-group">
     <div class="input-group mb-3" id="search-bar">
       <input type="text" class="form-control" placeholder="Enter a topic"
-      value="<?php if($havePost && $errors != '') { echo $query; } ?>" name="query" id="query" aria-label="query" aria-describedby="basic-addon2">
+      value="" name="query" id="query" aria-label="query" aria-describedby="basic-addon2">
       <div class="input-group-append">
         <a id="submit-button" tabindex="0" class="btn btn-success" role="button" data-toggle="popover" data-trigger="focus"
         data-content="Please enter a query." data-placement="top" type="submit" onclick='$("#search-form").submit()'>Search</a>
