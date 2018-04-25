@@ -16,6 +16,9 @@ $( document ).ready(function() {
   $(function () {
     $('[data-toggle="popover"]').popover()
   });
+
+  $( "#toggle" ).toggle( "scale" );
+
   $("#query").click(function() {
     $("#submit-button").toggleClass("btn-danger","btn-success");
   });

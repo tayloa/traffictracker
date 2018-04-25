@@ -1,5 +1,7 @@
 body {
-  background: linear-gradient(to right, #EB3349 , #F45C43);
+  /* background: linear-gradient(to right, #EB3349 , #F45C43); */
+  background: linear-gradient(to right, #1488CC , #2B32B2);
+
   background-size:cover;
 }
 .content {
