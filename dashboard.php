@@ -45,15 +45,12 @@
         <input type="text" class="form-control" id="inputCity">
       </div>
       <div class="form-group col-md-auto">
-        <select id="inputState" class="form-control">
-          <option>Past Hour</option>
-          <option>Past 4 Hours</option>
+        <select id="inputDate" class="form-control">
           <option>Past Day</option>
           <option>Past Week</option>
           <option>Past Month</option>
-          <option>Past 3 Months</option>
-          <option selected>Past Year</option>
-          <option>Custom Time Range</option>
+          <option selected>Past 30 Days</option>
+          <option data-toggle="modal" data-target="#exampleModalLong">Custom Date Range</option>
         </select>
       </div>
       <div class="form-group col-md-2">
@@ -65,37 +62,54 @@
   </form>
 </div>
 
-  <!-- <div class="form-row">
-    <div class="form-group col-lg-5">
-      <div class="input-group mb-3" id="search-bar">
-        <input type="text" class="form-control" placeholder="Enter a topic"
-        value="" name="query" id="query" aria-label="query" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <a id="submit-button" tabindex="0" class="btn btn-success" role="button" data-toggle="popover" data-trigger="focus"
-          data-content="Please enter a query." data-placement="top" type="submit" onclick='$("#search-form").submit()'>Search</a>
-        </div>
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
-    <div class="form-group col-sm-1">
-      <select id="inputState" class="form-control">
-        <option>Past Hour</option>
-        <option>Past 4 Hours</option>
-        <option>Past Day</option>
-        <option>Past Week</option>
-        <option>Past Month</option>
-        <option>Past 3 Months</option>
-        <option selected>Past Year</option>
-        <option>Custom Time Range</option>
-      </select>
+  </div>
+</div>
+
+<div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeMOdal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Welcome to Trend Tracker!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Trend Tracker is a platform in which you can view a trends appearance across
+          different websites and social media platforms. Currently we support trend
+          filtering for Google, Twitter, RSS, and Instagram. The furthest range we display is currently
+          30 days, but that will change as we further develop the application.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Get Started</button>
+      </div>
     </div>
   </div>
-</form> -->
-
+</div>
 <?php
 include('includes/embed.inc.php');
 // include global css, javascript, end the head and open the body
 ?>
 
 
-<?php include('includes/foot.inc.php');
+<?php include('includes/foot-dashboard.inc.php');
 ?>

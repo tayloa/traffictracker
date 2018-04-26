@@ -1,9 +1,3 @@
-<!-- <div class="col-md-5">
-  <div class="row">
-
-  </div>
-</div> -->
-
 <div class="container">
   <div class="row">
     <div class="jumbotron col-md-6">

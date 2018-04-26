@@ -13,7 +13,7 @@
     <h1 class="logo animated bounceInDown"><i class="fas fa-chart-line animated infinite pulse"></i>Trend Tracker</h1>
   </div>
   <div>
-   <h3 id="sub-text" class="sub-text">View your trends across platforms in one place</h3>
+   <h3 id="sub-text" class="sub-text">View a trend's history across multiple platforms, all in one place.</h3>
  </div>
 </div>
 
