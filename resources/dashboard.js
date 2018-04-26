@@ -1,15 +1,12 @@
 $( document ).ready(function(){
 
-  $('#welcomeModal').modal({
-    keyboard: false
-  })
-//   $('#myModal').on('shown.bs.modal', function () {
-//   $('#myInput').trigger('focus')
-// })
+  // $('#welcomeModal').modal({
+  //   keyboard: false
+  // });
 
   $("#inputDate").click(function () {
     if ($(this).val() === "Custom Date Range") {
-      $('#exampleModalLong').modal('toggle')
+      $('#inputDateRange').modal('toggle');
     }
   });
 

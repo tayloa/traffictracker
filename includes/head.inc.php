@@ -10,6 +10,6 @@
   <link rel="stylesheet"
  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
   <link href="resources/style.css" rel="stylesheet" type="text/css"/>
-  <title>Traffic Tracker</title>
+  <title>Trend Tracker</title>
 </head>
 <body>
