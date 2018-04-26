@@ -7,7 +7,14 @@
   // include global css, javascript, end the head and open the body
 ?>
 
+<?php
 
+session_start();
+
+
+$_SESSION['query'] = $queryValue;
+
+?>
 <div class="content">
   <div class="title">
     <h1 class="logo animated bounceInDown"><i class="fas fa-chart-line"></i>Trend Tracker</h1>
@@ -17,7 +24,7 @@
  </div>
 </div>
 
-<form  id="basic-search-form" name="basic-search-form" action="dashboard.php" method="post" onsubmit="return validate(this);">
+<form  id="basic-search-form" name="basic-search-form" action="dashboard.php" method="get" onsubmit="return validate(this);">
   <div class="form-group">
     <div class="input-group mb-3" id="search-bar">
       <a href="#" class="btn btn-secondary" data-toggle="popover" data-placement="top" data-trigger="hover"
@@ -26,6 +33,9 @@
       </a>
       <input type="text" class="form-control" placeholder="Enter a topic"
       value="" name="query" id="query" aria-label="query" aria-describedby="basic-addon2">
+
+      <input type="hidden" name="varname" value="var_value">
+
       <div class="input-group-append">
         <a id="submit-button" tabindex="0" class="btn btn-success" role="button" data-toggle="popover" data-trigger="focus"
         data-content="Please enter a query." data-placement="top" type="submit" onclick='$("#basic-search-form").submit()'>Search</a>

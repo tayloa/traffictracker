@@ -7,6 +7,12 @@
   // include global css, javascript, end the head and open the body
 ?>
 
+<?php
+
+session_start();
+
+?>
+
 <div class="content">
   <div class="title">
     <a id="logo" href="dashboard.php"><h1 class="logo animated bounceInDown"><i class="fas fa-chart-line"></i>Trend Tracker</h1></a>
@@ -96,9 +102,14 @@
 
 <?php
 include('includes/embed.inc.php');
-// include global css, javascript, end the head and open the body
+// These are the embeded data charts 
 ?>
 
 
 <?php include('includes/foot-dashboard.inc.php');
+
+// This code sets the input value of the query by pulling the
+//form input from index.php
+$queryValue = $_GET['query'];
+echo "<script type=text/javascript> $('#query').val('{$queryValue}'); </script>";
 ?>
