@@ -9,7 +9,7 @@
 
 <div class="content">
   <div class="title">
-    <h1 class="logo animated bounceInDown"><i class="fas fa-chart-line"></i>Trend Tracker</h1>
+    <a id="logo" href="dashboard.php"><h1 class="logo animated bounceInDown"><i class="fas fa-chart-line"></i>Trend Tracker</h1></a>
   </div>
 </div>
 

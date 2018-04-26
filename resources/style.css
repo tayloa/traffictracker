@@ -19,9 +19,16 @@ body {
 .btn-danger {
   background: red !important;
 }
-#inputDate {
-  color: red;
+#logo {
+  color: inherit;
 }
+#logo:hover
+{
+ color:#00A0C6;
+ text-decoration:none;
+ cursor:pointer;
+}
+
 #sub-text {
   display: none;
 }
