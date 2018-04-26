@@ -38,7 +38,7 @@
 </div>
 
 <div class="container">
-  <form id="complex-search-form">
+  <form id="complex-search-form" onsubmit="return validate(this);">
 
     <div class="row justify-content-md-center">
       <div class="col input-group mb-3">
@@ -64,14 +64,6 @@
           <option id="optionDateRange" data-toggle="modal" data-target="#inputDateRange">Custom Date Range</option>
         </select>
       </div>
-      <!-- <div class="form-group col-md-2">
-        <div class="input-group-append">
-          <a id="submit-button" tabindex="0" class="btn btn-success" role="button" data-toggle="popover" data-trigger="focus"
-          data-content="Please enter a query." data-placement="top" type="submit" onclick='$("#complex-search-form").submit()'>
-          <i class="fas fa-search"></i>
-          </a>
-        </div>
-      </div> -->
   </form>
 </div>
 
@@ -87,10 +79,10 @@
       <div class="modal-body">
         <form id="date-range-form">
           <div class="form-group">
-
+            <label for="startDate">Start date</label>
             <div class="value"><input type="text" size="10" maxlength="10" value="" name="startDate" id="startDate"/> <em>yyyy-mm-dd</em></div>
+            <label for="endDate">End date</label>
             <div class="value"><input type="text" size="10" maxlength="10" value="" name="endDate" id="endDate"/> <em>yyyy-mm-dd</em></div>
-
           </div>
         </form>
       </div>

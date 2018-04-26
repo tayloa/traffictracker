@@ -19,8 +19,6 @@ $( document ).ready(function() {
   });
   $("#sub-text").hide(0).fadeIn(4000);
 
-  $( "#toggle" ).toggle( "scale" );
-
   $("#query").click(function() {
     if ($(this).value != "") {
       $("#submit-button").removeClass("btn-danger");

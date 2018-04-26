@@ -10,7 +10,7 @@
 
 <div class="content">
   <div class="title">
-    <h1 class="logo animated bounceInDown"><i class="fas fa-chart-line animated infinite pulse"></i>Trend Tracker</h1>
+    <h1 class="logo animated bounceInDown"><i class="fas fa-chart-line"></i>Trend Tracker</h1>
   </div>
   <div>
    <h3 id="sub-text" class="sub-text">View a trend's history across multiple platforms, all in one place.</h3>

@@ -1,6 +1,9 @@
 </div>
   <div id="footer">
     Aaron Tayor, Justin Gaskins 2018, Rensselaer Polytechnic Institute
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fab fa-github"></i></button>
+    </div
   </div>
   <script  src="http://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
