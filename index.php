@@ -10,15 +10,18 @@
 
 <div class="content">
   <div class="title">
-    <h1 class="logo animated bounceInDown"><i class="fas fa-archive infinite pulse"></i> Trend Tracker</h1>
+    <h1 class="logo animated bounceInDown"><i class="fas fa-chart-line animated infinite pulse"></i>Trend Tracker</h1>
   </div>
+  <div>
+   <h3 id="sub-text" class="sub-text">View your trends across platforms in one place</h3>
+ </div>
 </div>
 
 <form  id="basic-search-form" name="basic-search-form" action="dashboard.php" method="post" onsubmit="return validate(this);">
   <div class="form-group">
     <div class="input-group mb-3" id="search-bar">
       <a href="#" class="btn btn-secondary" data-toggle="popover" data-placement="top" data-trigger="hover"
-      data-content="Enter a topic to query and we'll send you its trend data.">
+      data-content="Enter a topic and we'll send you its trend data.">
         <i class="fas fa-question"></i>
       </a>
       <input type="text" class="form-control" placeholder="Enter a topic"
