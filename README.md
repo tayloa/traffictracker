@@ -1,1 +1,1 @@
-TrafficTracker is an application being built to better analyze web data.
+TrendTracker is an application being built to better analyze trending topics on the web
