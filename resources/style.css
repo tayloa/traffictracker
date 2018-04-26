@@ -19,6 +19,9 @@ body {
 .btn-danger {
   background: red !important;
 }
+#inputDate {
+  color: red;
+}
 #sub-text {
   display: none;
 }
