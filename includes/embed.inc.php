@@ -8,11 +8,9 @@
        </div>
        <div id="trends-block" class="collapse">
            <div class="card-block">
-             <p class="card-text">
-                 Apply for parking permit<br />
-                 View existing permit requests<br />
-                 Activate Visitor permits<br />
-             </p>
+             <div class="card-body">
+               <h1>GOOGLE TRENDS</h1>
+             </div>
            </div>
        </div>
      </div>
@@ -24,52 +22,45 @@
        </div>
        <div id="twitter-block" class="collapse">
            <div class="card-block">
-             <p class="card-text">
-                 Apply for parking permit<br />
-                 View existing permit requests<br />
-                 Activate Visitor permits<br />
-             </p>
+             <div class="card-body">
+               <h1>TWITTER FEED</h1>
+             </div>
            </div>
        </div>
      </div>
-     <!-- <div class="card text-center">
-         <div class="card-block">
-             <h4 class="card-title">Vehicles</h4>
-             <p class="card-text">
-                 View and manage your vehicles
-             </p>
-         </div>
-         <div class="card-footer">
-             @Html.ActionLink("My Vehicles", "Index", "Vehicle", null, new { @class = "btn btn-primary" })
-         </div>
-     </div> -->
  </div>
- <div class="card-deck">
-    <div class="card text-center">
-        <div class="card-block">
-            <h4 class="card-title">Permits</h4>
-            <p class="card-text">
-                Apply for parking permit<br />
-                View existing permit requests<br />
-                Activate Visitor permits<br />
-            </p>
-        </div>
-        <div class="card-footer">
-            @Html.ActionLink("Permits", "Index", "Home", new { Area = "Permit" }, new { @class = "btn btn-primary" })
-        </div>
-    </div>
-
-    <div class="card text-center">
-        <div class="card-block">
-            <h4 class="card-title">Vehicles</h4>
-            <p class="card-text">
-                View and manage your vehicles
-            </p>
-        </div>
-        <div class="card-footer">
-            @Html.ActionLink("My Vehicles", "Index", "Vehicle", null, new { @class = "btn btn-primary" })
-        </div>
-    </div>
+</div>
+<div class="container">
+  <div class="card-deck">
+     <div class="card text-center">
+       <div class="card-header">
+           <a data-toggle="collapse" href="#rss-block" aria-expanded="true" aria-controls="test-block">
+             <h4 class="card-title">Permits</h4>
+           </a>
+       </div>
+       <div id="rss-block" class="collapse">
+           <div class="card-block">
+             <div class="card-body">
+               <h1>RSS FEED</h1>
+             </div>
+           </div>
+       </div>
+     </div>
+     <div class="card text-center">
+       <div class="card-header">
+           <a data-toggle="collapse" href="#instagram-block" aria-expanded="true" aria-controls="test-block">
+             <h4 class="card-title">Permits</h4>
+           </a>
+       </div>
+       <div id="instagram-block" class="collapse">
+           <div class="card-block">
+             <div class="card-body">
+               <h1>INSTAGRAM FEED</h1>
+             </div>
+           </div>
+       </div>
+     </div>
+  </div>
 </div>
 
 <!-- <div class="card">
