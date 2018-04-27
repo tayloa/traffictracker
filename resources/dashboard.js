@@ -53,7 +53,17 @@ $( document ).ready(function(){
       }
       else {
         var startDate = new Date($('#startDate').val());
+        if (!startDate.valid()) {
+          alert("Please enter a valid start date (yyyy-mm-dd)");
+          startDate.focus();
+          return false;
+        }
         var endDate = new Date($('#endDate').val());
+        if (!endDate.valid()) {
+          alert("Please enter a valid end date (yyyy-mm-dd)");
+          endDate.focus();
+          return false;
+        }
         var startDateString = startDate.toDateString();
         var endDateString = endDate.toDateString();
         var dateRange = startDateString + " to " + endDateString;

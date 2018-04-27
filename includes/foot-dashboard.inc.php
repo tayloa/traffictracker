@@ -1,5 +1,5 @@
 </div>
-  <div id="footer">
+  <div id="footer" style="position: relative;">
     Aaron Tayor, Justin Gaskins 2018, Rensselaer Polytechnic Institute
     <div class="btn-group" role="group" aria-label="Basic example">
       <a href="https://github.com/tayloa/trendtracker">
