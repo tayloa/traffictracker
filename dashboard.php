@@ -19,7 +19,7 @@ session_start();
   </div>
 </div>
 
-<div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeMOdal" aria-hidden="true">
+<div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeModal" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -44,7 +44,7 @@ session_start();
 </div>
 
 <div class="container">
-  <form id="complex-search-form" onsubmit="return validate(this);">
+  <form id="complex-search-form" onsubmit="return validate(this) && getRSS(this);">
 
     <div class="row justify-content-md-center">
       <div class="col input-group mb-3">
@@ -102,7 +102,7 @@ session_start();
 
 <?php
 include('includes/embed.inc.php');
-// These are the embeded data charts 
+// These are the embeded data charts
 ?>
 
 
