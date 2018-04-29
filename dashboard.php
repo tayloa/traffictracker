@@ -30,7 +30,7 @@ session_start();
       </div>
       <div class="modal-body">
         <p>
-          Trend Tracker is a platform in which you can view a trends history across
+          Trend Tracker is a platform in which you can view a trend's history across
           different websites and applications. Currently we support trend tracking on Google,
           Twitter, RSS, and Instagram.Enter a trend in the search bar to get started!
         </p>
