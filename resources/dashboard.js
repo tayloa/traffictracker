@@ -52,8 +52,8 @@ $( document ).ready(function(){
         if ($(this).value && $("#query").value.trim() != "") {
           ("#complex-search-form").submit();
         } else {
-          $("#submit-button").removeClass("btn-danger");
-          $("#submit-button").addClass("btn-success");
+          $("#submit-button").addClass("btn-danger");
+          $("#submit-button").removeClass("btn-success");
         }
       }
   });
