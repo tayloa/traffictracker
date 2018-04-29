@@ -15,12 +15,13 @@ function validateDate(dateString) {
   return dateString.match(regEx) != null;
 }
 
-// $( document ).ready(function(){
-//   $('#welcomeModal').modal({
-//     keyboard: false
-//   });
+$( document ).ready(function(){
 
-  alert($("#inputDate").val(),$("#dateRange").val());
+  $('#welcomeModal').modal({
+    keyboard: false
+  });
+
+  // alert($("#inputDate").val(),$("#dateRange").val());
 
   $("#inputDate").click(function () {
     if ($(this).val() === "Custom Date Range") {
@@ -33,7 +34,7 @@ function validateDate(dateString) {
   });
 
   $("#query").click(function() {
-    if ($(this).value.trim() != "") {
+    if ($(this).value && $(this).value.trim() != "") {
       $("#submit-button").removeClass("btn-danger");
       $("#submit-button").addClass("btn-success");
     }
@@ -48,49 +49,50 @@ function validateDate(dateString) {
           $("#submit-button").removeClass("btn-success");
           $("#complex-search-form").submit();
         }
-        if ($("#query").value.trim() != "") {
+        if ($(this).value && $("#query").value.trim() != "") {
           ("#complex-search-form").submit();
-          alert();
         } else {
           $("#submit-button").removeClass("btn-danger");
           $("#submit-button").addClass("btn-success");
         }
       }
   });
+});
 
   $( "#date-range-form" ).submit(function( event ) {
-      event.preventDefault();
+    event.preventDefault();
 
-      if (!validateDate($('#startDate').val())) {
+    if (!validateDate($('#startDate').val())) {
+      alert("Please enter a valid start date (yyyy-mm-dd)");
+      $("#startDate").focus();
+      return false;
+    }
+    if (!validateDate($('#endDate').val())) {
+      alert("Please enter a valid end date (yyyy-mm-dd)");
+      $("#endDate").focus();
+      return false;
+    }
+    else {
+      var startDate = new Date($('#startDate').val());
+      var endDate = new Date($('#endDate').val());
+
+      if (!isNaN(startDate.getTime())) {
         alert("Please enter a valid start date (yyyy-mm-dd)");
-        startDate.focus();
+        $("#startDate").focus();
         return false;
       }
-      if (!validateDate($('#endDate').val())) {
+
+      if (!isNaN(startDate.endTime())) {
         alert("Please enter a valid end date (yyyy-mm-dd)");
-        endDate.focus();
+        $("#endDate").focus();
         return false;
       }
-      else {
-        var startDate = new Date($('#startDate').val());
-        if (!startDate.isValid()) {
-          alert("Please enter a valid start date (yyyy-mm-dd)");
-          startDate.focus();
-          return false;
-        }
 
-        var endDate = new Date($('#endDate').val());
-        if (!endDate.isValid()) {
-          alert("Please enter a valid end date (yyyy-mm-dd)");
-          endDate.focus();
-          return false;
-        }
-
-        var startDateString = startDate.toDateString();
-        var endDateString = endDate.toDateString();
-        var dateRange = startDateString + " to " + endDateString;
-        $('#inputDateRange').modal('toggle');
-        $("#optionDateRange").text(dateRange);
-        return true;
-      }
+      var startDateString = startDate.toDateString();
+      var endDateString = endDate.toDateString();
+      var dateRange = startDateString + " to " + endDateString;
+      $('#inputDateRange').modal('toggle');
+      $("#optionDateRange").text(dateRange);
+      return true;
+    }
 });

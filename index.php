@@ -13,14 +13,14 @@ session_start();
 
 
 $_SESSION['query'] = $queryValue;
-
+$_SESSION['inputDate'] = $inputDateValue;
 ?>
 <div class="content">
   <div class="title">
     <h1 class="logo animated bounceInDown"><i class="fas fa-chart-line"></i>Trend Tracker</h1>
   </div>
   <div>
-   <h3 id="sub-text" class="sub-text">View a trend's history across multiple platforms, all in one place.</h3>
+   <h3 id="sub-text" class="sub-text">Search a trend and see its popularity across the internet.</h3>
  </div>
 </div>
 
@@ -34,7 +34,7 @@ $_SESSION['query'] = $queryValue;
       <input type="text" class="form-control" placeholder="Enter a topic"
       value="" name="query" id="query" aria-label="query" aria-describedby="basic-addon2">
 
-      <input type="hidden" name="varname" value="var_value">
+      <input type="hidden" name="inputDate" value="Past Month">
 
       <div class="input-group-append">
         <a id="submit-button" tabindex="0" class="btn btn-success" role="button" data-toggle="popover" data-trigger="focus"

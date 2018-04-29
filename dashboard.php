@@ -31,9 +31,8 @@ session_start();
       <div class="modal-body">
         <p>
           Trend Tracker is a platform in which you can view a trends history across
-          different websites and social media platforms. Currently we support trend
-          filtering for Google, Twitter, RSS, and Instagram. The furthest range we display is
-          30 days back, but that will change as we further develop the application.
+          different websites and applications. Currently we support trend tracking on Google,
+          Twitter, RSS, and Instagram.Enter a trend in the search bar to get started!
         </p>
       </div>
       <div class="modal-footer">
@@ -65,8 +64,7 @@ session_start();
         <select id="inputDate" class="form-control">
           <option>Past Day</option>
           <option>Past Week</option>
-          <option>Past Month</option>
-          <option selected>Past 30 Days</option>
+          <option selected>Past Month</option>
           <option id="optionDateRange" data-toggle="modal" data-target="#inputDateRange">Custom Date Range</option>
         </select>
       </div>

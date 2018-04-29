@@ -8,7 +8,10 @@
        <div id="trends-block" class="collapse">
            <div class="card-block">
              <div class="card-body">
-               <h1>GOOGLE TRENDS</h1>
+               <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1386_RC02/embed_loader.js"></script>
+               <script type="text/javascript"> trends.embed.renderExploreWidget(
+                 "TIMESERIES", {"comparisonItem":[{"keyword":"kanye","geo":"","time":"today 12-m"}],"category":0,"property":""},
+               {"exploreQuery":"q=kanye&date=today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
              </div>
            </div>
        </div>
@@ -22,8 +25,9 @@
        <div id="twitter-block" class="collapse">
            <div class="card-block">
              <div class="card-body">
-               <h1>TWITTER FEED</h1>
-             </div>
+               <a class="twitter-timeline"  href="https://twitter.com/hashtag/Kanye" data-widget-id="989921026422210561">#Kanye Tweets</a>
+               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              </div>
            </div>
        </div>
      </div>
@@ -52,7 +56,7 @@
        <div id="instagram-block" class="collapse">
            <div class="card-block">
              <div class="card-body">
-               <h1><i class="fab fa-instagram"></i>INSTAGRAM FEED</h1>
+               <h1>INSTAGRAM FEED</h1>
              </div>
            </div>
        </div>
