@@ -15,10 +15,10 @@ function validateDate(dateString) {
   return dateString.match(regEx) != null;
 }
 
-$( document ).ready(function(){
-  $('#welcomeModal').modal({
-    keyboard: false
-  });
+// $( document ).ready(function(){
+//   $('#welcomeModal').modal({
+//     keyboard: false
+//   });
 
   alert($("#inputDate").val(),$("#dateRange").val());
 
@@ -37,6 +37,25 @@ $( document ).ready(function(){
       $("#submit-button").removeClass("btn-danger");
       $("#submit-button").addClass("btn-success");
     }
+  });
+
+  // Handle case where user presses enter instead of clicking submit
+  $(document).keypress(function(e) {
+    if(e.which == 13) {
+        if (!$("#query").value) {
+          $("#submit-button").popover("toggle");
+          $("#submit-button").addClass("btn-danger");
+          $("#submit-button").removeClass("btn-success");
+          $("#complex-search-form").submit();
+        }
+        if ($("#query").value.trim() != "") {
+          ("#complex-search-form").submit();
+          alert();
+        } else {
+          $("#submit-button").removeClass("btn-danger");
+          $("#submit-button").addClass("btn-success");
+        }
+      }
   });
 
   $( "#date-range-form" ).submit(function( event ) {
@@ -74,5 +93,4 @@ $( document ).ready(function(){
         $("#optionDateRange").text(dateRange);
         return true;
       }
-  });
 });
