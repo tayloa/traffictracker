@@ -1,5 +1,5 @@
-function validate(formObj) {
-  if (formObj.query.value === "") {
+function complexValidate(formObj) {
+  if ((!formObj.query.value) || (!formObj.query.value.trim())) {
     $("#query").focus(function() {
       $(this).css('border-color', '#FFFFEE');
     });
@@ -16,10 +16,9 @@ function validateDate(dateString) {
 }
 
 $( document ).ready(function(){
-
-  $('#welcomeModal').modal({
-    keyboard: false
-  });
+  // $('#welcomeModal').modal({
+  //   keyboard: false
+  // });
 
   $("#inputDate").click(function () {
     if ($(this).val() === "Custom Date Range") {
@@ -32,7 +31,7 @@ $( document ).ready(function(){
   });
 
   $("#query").click(function() {
-    if ($(this).value != "") {
+    if ($(this).value.trim() != "") {
       $("#submit-button").removeClass("btn-danger");
       $("#submit-button").addClass("btn-success");
     }
@@ -53,17 +52,19 @@ $( document ).ready(function(){
       }
       else {
         var startDate = new Date($('#startDate').val());
-        if (!startDate.valid()) {
+        if (!startDate.isValid()) {
           alert("Please enter a valid start date (yyyy-mm-dd)");
           startDate.focus();
           return false;
         }
+
         var endDate = new Date($('#endDate').val());
-        if (!endDate.valid()) {
+        if (!endDate.isValid()) {
           alert("Please enter a valid end date (yyyy-mm-dd)");
           endDate.focus();
           return false;
         }
+
         var startDateString = startDate.toDateString();
         var endDateString = endDate.toDateString();
         var dateRange = startDateString + " to " + endDateString;

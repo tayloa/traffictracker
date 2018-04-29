@@ -44,7 +44,7 @@ session_start();
 </div>
 
 <div class="container">
-  <form id="complex-search-form" onsubmit="return validate(this) && getRSS(this);">
+  <form id="complex-search-form" action="dashboard.php" onsubmit="return complexValidate(this);">
 
     <div class="row justify-content-md-center">
       <div class="col input-group mb-3">

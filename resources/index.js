@@ -1,5 +1,5 @@
 function validate(formObj) {
-  if (formObj.query.value === "") {
+  if ((!formObj.query.value) || (!formObj.query.value.trim())) {
     $("#query").focus(function() {
       $(this).css('border-color', '#FFFFEE');
     });
@@ -20,7 +20,7 @@ $( document ).ready(function() {
   $("#sub-text").hide(0).fadeIn(4000);
 
   $("#query").click(function() {
-    if ($(this).value != "") {
+    if ($(this).value.trim() != "") {
       $("#submit-button").removeClass("btn-danger");
       $("#submit-button").addClass("btn-success");
     }
