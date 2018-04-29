@@ -16,9 +16,11 @@ function validateDate(dateString) {
 }
 
 $( document ).ready(function(){
-  // $('#welcomeModal').modal({
-  //   keyboard: false
-  // });
+  $('#welcomeModal').modal({
+    keyboard: false
+  });
+
+  alert($("#inputDate").val(),$("#dateRange").val());
 
   $("#inputDate").click(function () {
     if ($(this).val() === "Custom Date Range") {
