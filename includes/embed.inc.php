@@ -1,6 +1,6 @@
-<!-- This file is every feed card presented on the dashboard page. -->
-
-
+<!--
+This file is every feed card presented on the dashboard page. 
+-->
   <div class="card-deck">
      <div class="card text-center">
        <div class="card-header">
