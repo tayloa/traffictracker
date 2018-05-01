@@ -1,3 +1,4 @@
+// Validate the user trend input
 function validate(formObj) {
   if ((!formObj.query.value) || (!formObj.query.value.trim())) {
     $("#query").focus(function() {
@@ -13,12 +14,15 @@ function validate(formObj) {
 
 $( document ).ready(function() {
 
-  // Initialize pop overs
+  // Initialize Bootstrap pop overs
   $(function () {
     $('[data-toggle="popover"]').popover()
   });
+
+  // Fade in the subtext
   $("#sub-text").hide(0).fadeIn(4000);
 
+  // Change the style of the submit button based on input
   $("#query").click(function() {
     if ($(this).value.trim() != "") {
       $("#submit-button").removeClass("btn-danger");

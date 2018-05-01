@@ -32,7 +32,8 @@ session_start();
         <p>
           Trend Tracker is a platform in which you can view a trend's history across
           different websites and applications. Currently we support trend tracking on Google,
-          Twitter, RSS, and Instagram.Enter a trend in the search bar to get started!
+          Twitter. RSS and Instagram feeds are works in progress. Enter a trend in the search bar to get started!
+          Then click on a feed card to view the results.
         </p>
       </div>
       <div class="modal-footer">
@@ -100,7 +101,6 @@ session_start();
 
 <?php
 include('includes/embed.inc.php');
-// These are the embeded data charts
 ?>
 
 

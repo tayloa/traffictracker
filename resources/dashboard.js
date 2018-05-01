@@ -1,3 +1,5 @@
+
+// Validate the user input trend
 function complexValidate(formObj) {
 
   // Check for whitespace and empty inputs for searchbar
@@ -38,6 +40,7 @@ $( document ).ready(function(){
     $('[data-toggle="popover"]').popover()
   });
 
+  // Change the styling of the submit button when the value isn't empty
   $("#query").click(function() {
     if ($(this).value && $(this).value.trim() != "") {
       $("#submit-button").removeClass("btn-danger");
@@ -91,21 +94,10 @@ $( "#date-range-form" ).submit(function( event ) {
     return false;
   }
   else {
+
+    // Replace the text in the drop down date menu for the new custom date
     var startDate = new Date($('#startDate').val());
     var endDate = new Date($('#endDate').val());
-
-    if (!isNaN(startDate.getTime())) {
-      alert("Please enter a valid start date (yyyy-mm-dd)");
-      $("#startDate").focus();
-      return false;
-    }
-
-    if (!isNaN(startDate.endTime())) {
-      alert("Please enter a valid end date (yyyy-mm-dd)");
-      $("#endDate").focus();
-      return false;
-    }
-
     var startDateString = startDate.toDateString();
     var endDateString = endDate.toDateString();
     var dateRange = startDateString + " to " + endDateString;
